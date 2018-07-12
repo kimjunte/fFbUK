@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<title>Fast Feedback UK (fFBUK)</title>
+		<link rel="shortcut icon" type="image/x-icon" href="../img/Tab_Icons/favicon.ico" />
+		<link rel="stylesheet" type="text/css" href="../css/generalstyle.css"/>
+		<script src="../js/jquery-3.2.1.min.js"></script>
+		<script src="../js/jspdf.min.js"></script>
+		<script src="../js/jspdf.plugin.autotable.js"></script>
+		
+		<script src="../js/pdfobject.js"></script>
+		<script src="../js/marking.js"></script>
+		
+		<!-- zip file library -->
+		<script src="../js/jszip.js"></script>
+		<script src="../js/fileSaver.js"></script>
+		<script mimeType=text/plain; charset=x-user-defined src="../js/jszip-utils.js"></script>
+	</head>
+	
+	<body>
+		<header>
+			<div>
+			<a href="../index.html">
+				<p style="float: left;"><img src="../img/Logo1.jpg" height="150px" width="150px"></p>
+				<br><br><br>
+				<b><p style="font-size:150%;">Fast FeedBack UK (fFBUK)</p></b>
+				<br>
+				<p style="color: blue"> &larr; Return to Homepage</p>
+			</a>
+			</div>    
+		</header>
+		<br><br><br>
+		
+		<div class="pdfUpload">
+		<form>
+			<strong>File to mark:</strong>
+			<input type="file" name="pdfChoose" id="pdfChoose" accept=".pdf" multiple />
+		</form>
+		</div>
+		<div class="tempUpload">
+		<form>
+			<strong>Marking template (zip file):</strong>
+			<input type="file" name="tempChoose" id="tempChoose" accept=".zip"/>
+		</form>
+		</div>
+		<div class="clear" style="height: 10px"></div>
+		
+		<div class="pdfEmbed"></div> <!--Filled by tabtoggle.js on upload to PDFChoose-->
+		
+		<div class="markingWrapper"> <!--Hidden until a template is chosen, including save buttons-->
+		<div class="sectionContainer"> <!--Filled by fillform.js on upload to tempChoose-->
+		</div>
+		
+		<div class="save">
+			<button type="button" onclick="if(confirm('All entered text will be deleted. Are you sure?')) setup()" id="clearButton">Clear All</button>
+			<button type="button" onclick="Save(event); getPDF()" id="nextButton">Save and Load Next Document</button>
+			Save as:
+			<input type="radio" name="txtorpdf" value="pdf" checked="checked">PDF</input>
+			<input type="radio" name="txtorpdf" value="txt">Text</input>
+		</div>
+		
+		</div>
+		<div class="clear"></div>
+		<footer></footer>
+		
+	</body>
+</html>
