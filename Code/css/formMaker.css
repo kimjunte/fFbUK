@@ -1,0 +1,164 @@
+#btn {
+	float: right;
+	margin:2px;
+}
+
+#submit {
+	float:right;
+	margin:2px;
+}
+
+footer{
+	height: 50px;
+}
+
+.positive,.negative{
+	width:49%;
+	border-radius: 15px;
+	
+	padding: 1em;
+	box-sizing: border-box;
+
+	text-align:center;
+	font-weight:bold;
+	font-size:20px;
+}
+
+.negative{
+	border: 2px solid #D61D00;
+	float: right;
+}
+
+.positive {
+	float: left;
+	border: 2px solid #009E30;
+}
+
+
+#moduleHeader {
+	text-align:center;
+	font-size: 30px;
+	font-weight:bold;
+}
+
+.sectionheading{
+	font-size:1.25em;
+	font-weight:bold;
+	text-align: center;
+}
+
+.sectionheading input[name="sectionHeading"]{
+	text-align:center;
+}
+
+#moduleHeader input[type="text"],#sectionheading input[type="text"] {
+
+	text-align:center;
+
+}
+
+.btn{
+	float:right;
+	margin-top: -1em;
+}
+
+
+a, a:visited {
+	color: black;
+	text-decoration: none;
+}
+
+a:hover {
+	color: blue;
+	text-decoration: none;
+}
+
+.button {
+	border: 2px solid black;
+	border-radius: 15px;
+
+	min-height: 20vh;
+
+	width:45%;
+
+	text-align:center;
+	font-size: 36px;
+	
+	display: table;
+}
+
+.button div {
+	vertical-align: middle;
+	display: table-cell;
+}
+
+.center{
+	margin-top: 5vh;
+	width:90%;
+	position: relative;
+	left: 5vw;
+	margin-bottom: 5vh;
+}
+
+.left{
+	float:left;
+}
+
+.right{
+	float:right;
+}
+
+.deleteSection{
+	margin-top:5px;
+	float:right;
+}
+
+.invisibleDiv{
+	float:left;
+	margin-top: 5px;
+}
+
+.deleteIcon, .invisibleDiv{
+	height:2vw;
+	width:2vw;
+	max-height: 20px;
+	max-width: 20px;
+}
+
+.deleteComment{
+	height:2vw;
+	width:2vw;
+	max-height: 20px;
+	max-width: 20px;
+
+	padding-top:1.2em;
+	padding-bottom:1.2em;
+	padding-left:10px;	
+
+}
+
+.deleteImg {
+	height:2vw;
+	width:2vw;
+	max-height: 20px;
+	max-width: 20px;
+	padding-left: 10px;
+	vertical-align: middle;
+}
+
+.fileLabel {
+	vertical-align: middle;
+	font-size: 0.9em;
+}
+
+.commentContainer{
+	width: 100%;
+}
+
+/* [[[18/08]]] start*/
+.imgUpload {
+	width:90px;
+    color:transparent;
+
+}
+/* [[[18/08]]] start */
