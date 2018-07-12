@@ -6,7 +6,7 @@ The functionality of the software should be clear from the user interface. This 
 
 *****************************
 
-*** Brief version history ***
+**Brief version history**
 
 Version 1 - Proof of concept of the software, where the bare bone functionalities were tested and didn’t think about end user
 
@@ -16,14 +16,14 @@ Version 3 - Final Version. Error checks implemented, mark scheme been added and 
 
 *****************************
 
-***jszip-utils.js***
+**jszip-utils.js**
 
 JSZipUtils.getBinaryContent(path, index, callback):
 	It is important to note that this is an EDITED version of the original jszip-utils library. We have added the 'index' argument to getBinaryContent to suit the needs of our software, 'index' being the current index of the loop when getBinaryContent is called. As getBinaryContent is asynchronous, one cannot rely on the value of the index being the same when the callback is called, as the loop continues while getBinaryContent runs in the background. This is why we have added the argument here; this argument is passed directly to the callback.
 
 *****************************
 
-***marking.js***
+**marking.js**
 
 marking.js controls the behaviour of the marking page.
 
@@ -55,7 +55,7 @@ printToPDF(text,name,headerText):
 
 *****************************
 
-***formMaker.js***
+**formMaker.js**
 
 readTemplate(event):
 	See explanation of readFile(event) above - this function is essentially the same, except at the very end a different function is called to fill the editing page.
